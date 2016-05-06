@@ -1,0 +1,66 @@
+mkdir data
+$ echo 'mongod --bind_ip=$IP --dbpath=data --nojournal --rest "$@"' > mongod
+$ chmod a+x mongod
+
+sudo pip install scrapy==0.24.6
+sudo pip install pymongo==2.6.2
+sudo pip install git+https://github.com/django-nonrel/django@nonrel-1.6
+sudo pip install git+https://github.com/django-nonrel/djangotoolbox
+sudo pip install git+https://github.com/django-nonrel/mongodb-engine
+
+
+wget https://www.rabbitmq.com/releases/rabbitmq-server/v3.5.3/rabbitmq-server_3.5.3-1_all.deb
+sudo dpkg -i (package name)
+cd /usr/share/doc/rabbitmq-server
+sudo cp rabbitmq.config.example.gz /home/ubuntu/workspace/rabitmq.gz
+gunzip rabitmq.gz
+cd $RABBITMQ_HOME/etc/rabbitmq/
+sudo cp ~/workspace/rabbitmq.config $RABBITMQ_HOME/etc/rabbitmq/
+
+sudo pip install django-celery
+sudo pip install celery
+sudo pip install django-widget-tweaks
+sudo pip install mongoengine
+
+python manage.py createsuperuser
+
+sudo rabbitmqctl add_user buste123 shadow123 
+sudo rabbitmqctl set_user_tags buste123 administrator
+sudo rabbitmqctl set_permissions -p / buste123 ".*" ".*" ".*"
+
+sudo pip install service_identity
+sudo pip install jsonpath-rw
+#NOT NEEDED ANYMORE#sudo pip uninstall Django && sudo pip install Django==1.7.6
+sudo pip install django-dynamic-scraper
+
+#run spider#
+scrapy crawl article_spider -a id=55ad0431cfc49e2b320b056d -a do_action=yes
+
+#setup scrapy server#
+SCRAPYD
+
+python manage.py celery worker --beat
+
+#SSH ADMIN#
+ssh mcadmin@45.55.215.165
+
+pip install -e git://github.com/scrapy/scrapyd.git#egg=scrapyd
+
+
+##DONT#
+###pip install django-mongonaut==0.2.20
+##django-mongodbforms
+##sudo pip install django-haystack
+##
+##DONT#
+
+MOVE FILES
+sudo cp ~/workspace/backfiles/django_spider.py 
+
+##NOT NECESSARY
+hg clone http://bitbucket.org/twanschik/nonrel-search
+hg clone https://bitbucket.org/twanschik/django-autoload/
+pip install -U django-forms-builder
+##
+
+sudo pip install django-avatar
