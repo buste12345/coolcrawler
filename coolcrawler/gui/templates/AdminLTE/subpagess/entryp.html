@@ -1,0 +1,32 @@
+{% extends "AdminLTE/starter.html" %}
+
+{% block page_header %}
+        <section class="content-header">
+          <h1>
+            Home Page
+          </h1>
+          <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li class="active">Home</li>
+          </ol>
+        </section>
+{% endblock %}
+
+{% block content %}
+        <!-- Main content -->
+        <section class="content">
+{% for res in result %}
+          <div class="box">
+            <div class="box-header with-border">
+              <h3 class="box-title"><a href="{% url 'entry' slug=res.slug %}">{{ res.title }}</a></h3>
+            </div>
+            <div class="box-body">
+              {{ res.content }}
+            </div><!-- /.box-body -->
+          </div><!-- /.box -->
+        
+{% endfor %}
+</section><!-- /.content -->
+
+{% endblock %}
+

@@ -1,0 +1,68 @@
+{% extends "AdminLTE/starter.html" %}
+
+{% block page_header %}
+        <section class="content-header">
+          <h1>
+            Existing sites
+            <small>Profiles</small>
+          </h1>
+          <ol class="breadcrumb">
+            <li><a href="/welcome/home/"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li class="active">Existing sites</li>
+          </ol>
+        </section>
+{% endblock %}
+
+{% block content %}
+        <!-- Main content -->
+ <section class="content">
+      <div class="row">
+            <div class="col-xs-12">
+              <div class="box">
+                <div class="box-header">
+                  <h3 class="box-title">Hover Data Table</h3>
+                </div><!-- /.box-header -->
+                <div class="box-body">
+                  <table id="webss" class="table table-bordered table-hover">
+                    <thead>
+                      <tr>
+                        <th>ID</th>
+                        <th>Profile name</th>
+                        <th>Sites</th>
+                        <th>Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+
+                    {% for res in result %}
+                      <tr>
+                        <td>{{ res.id }}</td>
+                        <td><a href="{% url 'urlweb' slug=res.name %}">{{ res.name }}</a></td>
+                        <td>{{ res.url.url }}</td>
+                        <th>
+<form action="#" method="POST">{% csrf_token %}
+ <button type="submit" name="runspider" value="{{res.id}}">Run</button>
+</form></th>
+                      </tr>
+        
+{% endfor %}
+                    </tbody>
+                    <tfoot>
+                      <tr>
+                        <th>ID</th>
+                        <th>Profile name</th>
+                        <th>Sites</th>
+                        <th>Action</th>
+                      </tr>
+                    </tfoot>
+                  </table>
+                </div><!-- /.box-body -->
+              </div><!-- /.box -->
+
+            </div><!-- /.col -->
+          </div><!-- /.row -->
+        </section><!-- /.content -->
+        
+
+{% endblock %}
+

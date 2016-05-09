@@ -1,0 +1,35 @@
+{% extends "AdminLTE/starter.html" %}
+
+{% block page_header %}
+        <section class="content-header">
+          <h1>
+            Add URLs
+          </h1>
+          <ol class="breadcrumb">
+            <li><a href="/welcome/home/"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li class="active">Add URLs</li>
+          </ol>
+        </section>
+{% endblock %}
+
+{% block content %}
+        <!-- Main content -->
+        <section class="content">
+          <div class="box">
+            <br>
+
+  <form action="{% url 'podd' %}" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+      <br>
+     <small>Use "|" without quotes to add multiple URLs</small>
+     <br>
+    <input type="submit" value="Add URLs" />
+  </form>
+   <br>
+  </div>
+ 
+</section><!-- /.content -->
+
+{% endblock %}
+
