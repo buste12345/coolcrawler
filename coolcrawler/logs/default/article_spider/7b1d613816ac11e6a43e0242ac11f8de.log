@@ -1,0 +1,40 @@
+2016-05-10 07:41:18-0500 [scrapy] INFO: Scrapy 0.24.6 started (bot: scraperfunc)
+2016-05-10 07:41:18-0500 [scrapy] INFO: Optional features available: ssl, http11, django
+2016-05-10 07:41:18-0500 [scrapy] INFO: Overridden settings: {'SPIDER_MODULES': ['dynamic_scraper.spiders', 'scraperfunc.scraper'], 'LOG_STDOUT': True, 'LOG_FILE': 'logs/default/article_spider/7b1d613816ac11e6a43e0242ac11f8de.log', 'USER_AGENT': 'scraperfunc/1.0', 'BOT_NAME': 'scraperfunc'}
+2016-05-10 07:41:18-0500 [scrapy] INFO: Enabled extensions: LogStats, TelnetConsole, CloseSpider, WebService, CoreStats, SpiderState, ExtensionThatAccessStats
+2016-05-10 07:41:18-0500 [scrapy] INFO: Enabled downloader middlewares: HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, MetaRefreshMiddleware, HttpCompressionMiddleware, RedirectMiddleware, CookiesMiddleware, ChunkedTransferMiddleware, DownloaderStats
+2016-05-10 07:41:18-0500 [scrapy] INFO: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
+2016-05-10 07:41:18-0500 [scrapy] INFO: Enabled item pipelines: DjangoImagesPipeline, MongoDBPipeline
+2016-05-10 07:41:18-0500 [article_spider] INFO: Spider opened
+2016-05-10 07:41:18-0500 [article_spider] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-05-10 07:41:18-0500 [scrapy] DEBUG: Telnet console listening on 127.0.0.1:6023
+2016-05-10 07:41:18-0500 [scrapy] DEBUG: Web service listening on 127.0.0.1:6080
+2016-05-10 07:41:18-0500 [article_spider] DEBUG: Crawled (200) <GET https://www.google.com.ni/search?q=hotels+new+orleans> (referer: None)
+2016-05-10 07:41:18-0500 [article_spider] INFO: Starting to crawl item 1.
+2016-05-10 07:41:18-0500 [article_spider] DEBUG: wholehtml           'http://www.google.com.ni/aclk?sa=l&ai=C6nzp7tYxV-DNDoyWpgPJqqXAB4OJsK0D4774iv8B_NX_CQgAEAQoBGDJrueIgKS8E6ABwsGd6wPIAQGqBCVP0HCHdrgAlat_IRt_uwzcWYp9bJURTjeTSz0Z-aJB1mF2XLeSgAeri50ikAcBqAemvhvYBwE&sig=AOD64_0QtLloYDGl5DXFgHSEglPWV9HUOg&clui=10&ved=0ahUKEwj76NDuw8_MAhUL4oMKHeEyAKkQ0QwIKw&adurl=http://es.hotels.com/de1456744/%3Fdateless%3Dtrue%26destinationid%3D1456744%26rffrid%3Dsem.hcom.U2.google.003.00.02.s.kwrd%3DZzZz.se29DwBro.0.68413788075.102023518767.d.c'
+2016-05-10 07:41:18-0500 [article_spider] DEBUG: url                 'http://es.hotels.com/de1456744/'
+2016-05-10 07:41:18-0500 [article_spider] DEBUG: Website added/updated to MongoDB database!
+2016-05-10 07:41:18-0500 [article_spider] DEBUG: Scraped from <200 https://www.google.com.ni/search?q=hotels+new+orleans>
+	{u'url': u'http://es.hotels.com/de1456744/',
+	 u'wholehtml': u'http://www.google.com.ni/aclk?sa=l&ai=C6nzp7tYxV-DNDoyWpgPJqqXAB4OJsK0D4774iv8B_NX_CQgAEAQoBGDJrueIgKS8E6ABwsGd6wPIAQGqBCVP0HCHdrgAlat_IRt_uwzcWYp9bJURTjeTSz0Z-aJB1mF2XLeSgAeri50ikAcBqAemvhvYBwE&sig=AOD64_0QtLloYDGl5DXFgHSEglPWV9HUOg&clui=10&ved=0ahUKEwj76NDuw8_MAhUL4oMKHeEyAKkQ0QwIKw&adurl=http://es.hotels.com/de1456744/%3Fdateless%3Dtrue%26destinationid%3D1456744%26rffrid%3Dsem.hcom.U2.google.003.00.02.s.kwrd%3DZzZz.se29DwBro.0.68413788075.102023518767.d.c'}
+2016-05-10 07:41:18-0500 [article_spider] INFO: Closing spider (finished)
+2016-05-10 07:41:18-0500 [article_spider] INFO: Scheduler runtime updated (Next action time: 2016-05-10 08:05, Next action factor: 3.0, Zero actions: 3)
+2016-05-10 07:41:18-0500 [article_spider] INFO: Dumping Scrapy stats:
+	{'downloader/request_bytes': 224,
+	 'downloader/request_count': 1,
+	 'downloader/request_method_count/GET': 1,
+	 'downloader/response_bytes': 16030,
+	 'downloader/response_count': 1,
+	 'downloader/response_status_count/200': 1,
+	 'finish_reason': 'finished',
+	 'finish_time': datetime.datetime(2016, 5, 10, 12, 41, 18, 952394),
+	 'item_scraped_count': 1,
+	 'log_count/DEBUG': 7,
+	 'log_count/INFO': 9,
+	 'response_received_count': 1,
+	 'scheduler/dequeued': 1,
+	 'scheduler/dequeued/memory': 1,
+	 'scheduler/enqueued': 1,
+	 'scheduler/enqueued/memory': 1,
+	 'start_time': datetime.datetime(2016, 5, 10, 12, 41, 18, 157779)}
+2016-05-10 07:41:18-0500 [article_spider] INFO: Spider closed (finished)

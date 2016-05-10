@@ -1,0 +1,34 @@
+2016-05-10 08:06:38-0500 [scrapy] INFO: Scrapy 0.24.6 started (bot: scraperfunc)
+2016-05-10 08:06:38-0500 [scrapy] INFO: Optional features available: ssl, http11, django
+2016-05-10 08:06:38-0500 [scrapy] INFO: Overridden settings: {'SPIDER_MODULES': ['dynamic_scraper.spiders', 'scraperfunc.scraper'], 'LOG_STDOUT': True, 'LOG_FILE': 'logs/default/article_spider/061dd4fe16b011e6a43e0242ac11f8de.log', 'USER_AGENT': 'scraperfunc/1.0', 'BOT_NAME': 'scraperfunc'}
+2016-05-10 08:06:38-0500 [scrapy] INFO: Enabled extensions: LogStats, TelnetConsole, CloseSpider, WebService, CoreStats, SpiderState, ExtensionThatAccessStats
+2016-05-10 08:06:38-0500 [scrapy] INFO: Enabled downloader middlewares: HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, MetaRefreshMiddleware, HttpCompressionMiddleware, RedirectMiddleware, CookiesMiddleware, ChunkedTransferMiddleware, DownloaderStats
+2016-05-10 08:06:38-0500 [scrapy] INFO: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
+2016-05-10 08:06:38-0500 [scrapy] INFO: Enabled item pipelines: DjangoImagesPipeline, MongoDBPipeline
+2016-05-10 08:06:38-0500 [article_spider] INFO: Spider opened
+2016-05-10 08:06:38-0500 [article_spider] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-05-10 08:06:38-0500 [scrapy] DEBUG: Telnet console listening on 127.0.0.1:6023
+2016-05-10 08:06:38-0500 [scrapy] DEBUG: Web service listening on 127.0.0.1:6080
+2016-05-10 08:06:38-0500 [article_spider] DEBUG: Crawled (200) <GET https://www.google.com.ni/search?q=reddit+4chan> (referer: None)
+2016-05-10 08:06:38-0500 [article_spider] ERROR: No base objects found!
+2016-05-10 08:06:38-0500 [article_spider] INFO: Closing spider (finished)
+2016-05-10 08:06:38-0500 [article_spider] INFO: Scheduler runtime updated (Next action time: 2016-05-10 08:05, Next action factor: 3.0, Zero actions: 5)
+2016-05-10 08:06:38-0500 [article_spider] INFO: Dumping Scrapy stats:
+	{'downloader/request_bytes': 218,
+	 'downloader/request_count': 1,
+	 'downloader/request_method_count/GET': 1,
+	 'downloader/response_bytes': 10955,
+	 'downloader/response_count': 1,
+	 'downloader/response_status_count/200': 1,
+	 'finish_reason': 'finished',
+	 'finish_time': datetime.datetime(2016, 5, 10, 13, 6, 38, 773284),
+	 'log_count/DEBUG': 3,
+	 'log_count/ERROR': 1,
+	 'log_count/INFO': 8,
+	 'response_received_count': 1,
+	 'scheduler/dequeued': 1,
+	 'scheduler/dequeued/memory': 1,
+	 'scheduler/enqueued': 1,
+	 'scheduler/enqueued/memory': 1,
+	 'start_time': datetime.datetime(2016, 5, 10, 13, 6, 38, 285374)}
+2016-05-10 08:06:38-0500 [article_spider] INFO: Spider closed (finished)

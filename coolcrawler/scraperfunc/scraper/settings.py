@@ -14,9 +14,9 @@ MONGODB_PORT = 27017
 MONGODB_DB = "crawlmongo"
 #RETURN TO NORMAL#
 #MONGODB_COLLECTION = "open_news_articles"
-MONGODB_COLLECTION = "scraperfunc"
+MONGODB_COLLECTION = "scraperfunc_"
 PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "example_project.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "coolcrawler.settings")
 sys.path.insert(0, os.path.join(PROJECT_ROOT, "../../..")) #only for example_project
 #DOWNLOAD_DELAY = 10
 
