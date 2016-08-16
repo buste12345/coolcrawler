@@ -158,6 +158,7 @@ class ScraperElem(models.Model):
     x_path = models.CharField(max_length=200, blank=True)
     reg_exp = models.CharField(max_length=200, blank=True)
     from_detail_page = models.BooleanField(default=False)
+    deepsearch = models.BooleanField(default=False)
     processors = models.CharField(max_length=200, blank=True)
     proc_ctxt = models.CharField(max_length=200, blank=True)
     mandatory = models.BooleanField(default=True)

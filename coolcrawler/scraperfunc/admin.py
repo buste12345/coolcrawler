@@ -1,5 +1,5 @@
 from django.contrib import admin
-from scraperfunc.models import NewsWebsite, googlespider, URLs, genericmodel
+from scraperfunc.models import NewsWebsite, googlespider, URLs, genericmodel, PROXYs
 from gui.models import entry
 
 class NewsWebsiteAdmin(admin.ModelAdmin):
@@ -65,6 +65,7 @@ class generigadmin(MultiDBModelAdmin):
     list_display = ['uniqueid']
     #list_display = '_ID'
 
+admin.site.register(PROXYs)
 admin.site.register(URLs)
 #admin.site.register(articles,artadmin)
 admin.site.register(googlespider,googlespideradmin)

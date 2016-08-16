@@ -10,9 +10,7 @@ def run_spiders():
     t = TaskUtils()
     #Optional as well: For more complex lookups you can pass Q objects vi args argument
 
-    print 'tur12'
     t.run_spiders(NewsWebsite, 'scraper', 'scraper_runtime', 'article_spider')
-    print 'tur13'
     #'id=2','do_action=yes','class=googlespider','itemc=GoogleItem')
     
 #@task()

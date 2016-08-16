@@ -22,7 +22,6 @@ import re
 namespace_regex = re.compile(r'^[A-z][\w-]{2,31}$')
 
 class URLs(models.Model):
-    
     url = models.TextField()
     nameid = models.CharField(max_length=200)
     
@@ -31,7 +30,17 @@ class URLs(models.Model):
 
     class Meta:
         ordering = ['nameid',]
+
+class PROXYs(models.Model):
+    proxy = models.TextField()
+    proxyid = models.CharField(max_length=200)
     
+    def __unicode__(self):
+        return self.proxyid
+
+    class Meta:
+        ordering = ['proxyid',]
+   
 class NewsWebsite(models.Model):
     name = models.CharField(max_length=200,unique = True, validators=[RegexValidator(regex=namespace_regex)] )
     #url = models.URLField()
@@ -42,6 +51,9 @@ class NewsWebsite(models.Model):
     item_class = models.CharField(max_length=100)
     delay_per_request = models.IntegerField(max_length=10000,default=0)
     randomdelay = models.BooleanField(default=False)
+    useProxy = models.BooleanField(default=False)
+    randomizeProxyUsage = models.BooleanField(default=False)
+    proxylist = models.ForeignKey(PROXYs, null=True, blank=True, on_delete=models.SET_NULL)
     
     @property
     def slug(self):

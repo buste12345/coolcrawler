@@ -12,7 +12,9 @@ from scrapy.contrib.loader import ItemLoader
 from scrapy.contrib.loader.processor import TakeFirst
 from scrapy.exceptions import CloseSpider
 from scrapy.selector import HtmlXPathSelector
-
+from scrapy.utils.response import get_base_url
+from scrapy.contrib.linkextractors import LinkExtractor
+import urlparse
 from dynamic_scraper.spiders.django_base_spider import DjangoBaseSpider
 from dynamic_scraper.models import ScraperElem
 from dynamic_scraper.utils.loader import JsonItemLoader
@@ -37,6 +39,10 @@ class DjangoSpider(DjangoBaseSpider):
         self.from_detail_page = False
         self.loader = None
         
+     #   self.rules = [
+     #       Rule(LinkExtractor(allow=r'\.kat$'), follow=True),
+     #       Rule(LinkExtractor(allow=r'/id_\d+/'), callback='parse_product'),
+     #   ]
         self.items_read_count = 0
         self.items_save_count = 0
         
@@ -232,6 +238,17 @@ class DjangoSpider(DjangoBaseSpider):
         self._set_loader(response, xs, self.scraped_obj_item_class())
         if not self.from_detail_page:
             self.items_read_count += 1
+            
+        hxs = HtmlXPathSelector(response)
+        nextelem = hxs.select(".//a[contains(text(),'Contact')]/@href").extract()
+        
+        self.log("Received next elem is= ## ",nextelem,"## and received deepsearch is ",self.deepsearch)
+        
+        if nextelem and self.deepsearch:
+            item = self.loader.load_item()
+            meta = {}
+            meta['item'] = item
+            yield Request(urlparse.urljoin(get_base_url(response),nextelem), callback=self.parse_item, meta=meta)
             
         elems = self.scraper.get_scrape_elems()
         

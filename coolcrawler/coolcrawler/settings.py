@@ -102,6 +102,7 @@ TEMPLATE_DIRS = (
 STATICFILES_DIRS = (
     #os.path.join(BASE_DIR, "templates"),
     os.path.join(os.path.dirname(__file__),'../gui/templates/AdminLTE/').replace('\\','/'),
+    os.path.join(os.path.dirname(__file__),'../').replace('\\','/'),
     #os.path.join(os.path.dirname(__file__),'../avatars/').replace('\\','/'),
     #os.path.join(os.path.dirname(__file__),'../avatars/').replace('\\','/'),
     #os.path.join(os.path.dirname(__file__),'templates/registration/').replace('\\','/'),
@@ -228,16 +229,18 @@ LOGGING = {
 #BROKER_BACKEND = "django"
 #BROKER_USER = "guest"
 #BROKER_PASSWORD = "guest"
-#BROKER_VHOST = "/"
+#BROKER_VHOST = "/"+
+
+#UNCOMMENT TO USE MONGODB AS THE MESSAGE BROKER##
 BROKER_URL = "amqp://buste123:shadow123@:::5672//"
 CELERYBEAT_SCHEDULER = 'djcelery.schedulers.DatabaseScheduler'
-CELERY_RESULT_BACKEND = "mongodb"
-CELERY_MONGODB_BACKEND_SETTINGS = {
-    "host": "127.0.0.1",
-    "port": 27017,
-    "database": "crawlmongo", 
-    "taskmeta_collection": "celerylogsxa",
-}
+#CELERY_RESULT_BACKEND = "mongodb"
+#CELERY_MONGODB_BACKEND_SETTINGS = {
+#    "host": "127.0.0.1",
+#    "port": 27017,
+#    "database": "crawlmongo", 
+#    "taskmeta_collection": "celerylogsxa",
+#}
 #CELERY_RESULT_BACKEND = "database"
 #CELERY_IMPORTS = ("dynamic_scraper.utils.tasks",)
 CELERY_ALWAYS_EAGER = True

@@ -10,9 +10,11 @@ from scrapy.selector import Selector
 from scrapy.http import Request
 from scrapy.contrib.loader import ItemLoader
 from scrapy.contrib.loader.processor import TakeFirst
-from scrapy.exceptions import CloseSpider
+from scrapy.exceptions import CloseSpider,NotSupported
 from scrapy.selector import HtmlXPathSelector
-
+import urlparse
+import urllib 
+from scrapy.utils.response import get_base_url
 from dynamic_scraper.spiders.django_base_spider import DjangoBaseSpider
 from dynamic_scraper.models import ScraperElem
 from dynamic_scraper.utils.loader import JsonItemLoader
@@ -23,6 +25,7 @@ from dynamic_scraper.utils import processors
 class DjangoSpider(DjangoBaseSpider):
 
     def __init__(self, *args, **kwargs):
+
         self.mandatory_vars.append('scraped_obj_class')
         self.mandatory_vars.append('scraped_obj_item_class')
         
@@ -248,6 +251,25 @@ class DjangoSpider(DjangoBaseSpider):
         
         for elem in elems:
             self._scrape_item_attr(elem)
+            
+        if self.from_detail_page:
+            hxs = HtmlXPathSelector(response)
+            try:
+                nextelem = hxs.select("//a[contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'),'contact')]/@href").extract()[0]
+                currenturl = urlparse.urljoin(get_base_url(response),nextelem)
+                self.log("Current URL is ## "+response.url+" ## and response URL is $$ "+currenturl)
+                
+                if nextelem and (currenturl != response.url) and ('javascript' not in currenturl):
+                    item = self.loader.load_item()
+                    meta = {}
+                    meta['item'] = item
+                    return Request(urllib.unquote(currenturl).decode('utf8'), callback=self.parse_item, meta=meta)
+            except IndexError:
+                self.log("No more deepsearch... continue!")
+            except NotSupported:
+                self.log("Web site is not supported.")
+                
+                
         # Dealing with Django Char- and TextFields defining blank field as null
         item = self.loader.load_item()
         for key, value in item.items():
@@ -259,6 +281,8 @@ class DjangoSpider(DjangoBaseSpider):
             #item, is_double = self._check_for_double_item(item)
             print 'DONT DO ANYTHING##'
         
+        #for value in item.itervalues():
+        #    self.log("Klak "+value);
         return item
 
 
@@ -291,10 +315,10 @@ class DjangoSpider(DjangoBaseSpider):
             self.log("Starting to crawl item %s." % str(item_num), log.INFO)
             item = self.parse_item(response, obj)
             
-            if self.scraper.scrape_urls:
-                print "scraper allowed"
-            else:
-                print "scraper not allowed"
+            ##if self.scraper.scrape_urls:
+            ##   print "scraper allowed"
+            ##else:
+            ##    print "scraper not allowed"
                 
             print '#############LOOOK##############'
             print item
@@ -344,12 +368,12 @@ class DjangoSpider(DjangoBaseSpider):
                     print url
                     print 'zxzxzxzxzxzxzxzxxz'
                     #request = Request(item['url'], callback=lambda r:self.parse_htmlcoderet(r,item))
-                    yield Request(url, callback=self.parse_item, meta=meta)
+                    yield Request(urllib.unquote(url).decode('utf8'), callback=self.parse_item, meta=meta)
                     #yield request
             else:
                 self.log("Item could not be read!", log.ERROR)
 
-        
+#WHOLE HTML BETA#        
     def parse_item2(self, response, xs=None):
         self._set_loader(response, xs, self.scraped_obj_item_class())
         if not self.from_detail_page:

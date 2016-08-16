@@ -27,10 +27,11 @@ USER_AGENT = '%s/%s' % (BOT_NAME, '1.0')
 
 ITEM_PIPELINES = {
     'dynamic_scraper.pipelines.DjangoImagesPipeline': 200,
-    'scraperfunc.scraper.pipelines.MongoDBPipeline':800,
-
+    'scraperfunc.scraper.pipelines.MongoDBPipeline':800
     
 }
+
+
 
 MYEXT_ENABLED = True    
 

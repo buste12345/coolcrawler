@@ -54,13 +54,12 @@ python manage.py celery worker --beat
 ssh mcadmin@45.55.215.165
 
 MOVE FILES
-sudo cp ~/workspace/backfiles/django_spider.py 
+sudo cp /dynamic_scraper/
 /usr/local/lib/python2.7/dist-packages
 
 
 
+python manage.py celeryd -l info -B --settings=coolcrawler.settings
 
 
-
-
-
+sudo cp -avr ~/workspace/coolcrawler/coolcrawler/dynamic_scraper /usr/local/lib/python2.7/dist-packages/

@@ -9,32 +9,28 @@ class ArticleSpider(DjangoSpider):
     
     name = 'article_spider'
     def __init__(self, *args, **kwargs):
-
-        
         #print self.ref_object.url
         self._set_ref_object(models.NewsWebsite, **kwargs)
-        
         urlarray = self.ref_object.url.url.split("|")
         self.scraper = self.ref_object.scraper
-        #self.scrape_url = []
         self.scrape_url = urlarray
         self.scheduler_runtime = self.ref_object.scraper_runtime
         self.download_delay = self.ref_object.delay_per_request
         self.randomize_download_delay = self.ref_object.randomdelay
-        #self.scraped_obj_class = articles
-        #self.scraped_obj_item_class = ArticleItem
-        
-        
         self.scraped_obj_class = getattr(models,self.ref_object.table_destination)
         self.scraped_obj_item_class = getattr(models,self.ref_object.item_class)
-        
+        self.dotoboso = self.ref_object.table_destination
+        #self.scrape_url = []
         #self.scraped_obj_class = models.googlespider
         #self.scraped_obj_item_class = models.GoogleItem
         #self.dotoboso = 'googlespider'
-        self.dotoboso = self.ref_object.table_destination
+        #self.scraped_obj_class = articles
+        #self.scraped_obj_item_class = ArticleItem
         #self.scraped_obj_item_class = models.GenItem(kwargs)
         #print self.scraped_obj_item_class
         #print '$%#%$#%$#%#'
+
+
         super(ArticleSpider, self).__init__(self, *args, **kwargs)
         
 class ExtensionThatAccessStats(object):

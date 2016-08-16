@@ -99,7 +99,7 @@ def runspider(idspider):
     return None
 
 def returnosites(slugg):
-    itemss = NewsWebsite.objects.get(name=slugg)
+    itemss = URLs.objects.get(nameid=slugg)
     return itemss
     
 def returnspider(slugg):

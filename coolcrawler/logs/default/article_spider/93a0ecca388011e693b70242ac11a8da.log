@@ -1,0 +1,463 @@
+2016-06-22 08:52:39-0500 [scrapy] INFO: Scrapy 0.24.6 started (bot: scraperfunc)
+2016-06-22 08:52:39-0500 [scrapy] INFO: Optional features available: ssl, http11, django
+2016-06-22 08:52:39-0500 [scrapy] INFO: Overridden settings: {'SPIDER_MODULES': ['dynamic_scraper.spiders', 'scraperfunc.scraper'], 'LOG_STDOUT': True, 'LOG_FILE': 'logs/default/article_spider/93a0ecca388011e693b70242ac11a8da.log', 'USER_AGENT': 'scraperfunc/1.0', 'BOT_NAME': 'scraperfunc'}
+2016-06-22 08:52:39-0500 [scrapy] INFO: Enabled extensions: LogStats, TelnetConsole, CloseSpider, WebService, CoreStats, SpiderState, ExtensionThatAccessStats
+2016-06-22 08:52:39-0500 [scrapy] INFO: Enabled downloader middlewares: HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, MetaRefreshMiddleware, HttpCompressionMiddleware, RedirectMiddleware, CookiesMiddleware, ChunkedTransferMiddleware, DownloaderStats
+2016-06-22 08:52:39-0500 [scrapy] INFO: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
+2016-06-22 08:52:39-0500 [scrapy] INFO: Enabled item pipelines: DjangoImagesPipeline, MongoDBPipeline
+2016-06-22 08:52:39-0500 [article_spider] INFO: Spider opened
+2016-06-22 08:52:39-0500 [article_spider] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-06-22 08:52:39-0500 [scrapy] DEBUG: Telnet console listening on 127.0.0.1:6023
+2016-06-22 08:52:39-0500 [scrapy] DEBUG: Web service listening on 127.0.0.1:6080
+2016-06-22 08:52:40-0500 [article_spider] DEBUG: Crawled (200) <GET https://www.google.com.ni/search?q=cell+phone+reparation+in+hialeah+florida&start=0> (referer: None)
+2016-06-22 08:52:40-0500 [article_spider] INFO: Starting to crawl item 1.
+2016-06-22 08:52:40-0500 [article_spider] DEBUG: url                 None
+2016-06-22 08:52:40-0500 [article_spider] ERROR: Item could not be read!
+2016-06-22 08:52:40-0500 [article_spider] INFO: Starting to crawl item 2.
+2016-06-22 08:52:40-0500 [article_spider] DEBUG: url                 'http://www.yelp.com/search%3Fcflt%3Dmobilephonerepair%26find_loc%3DHialeah%252C%2BFL'
+2016-06-22 08:52:40-0500 [article_spider] INFO: Starting to crawl item 3.
+2016-06-22 08:52:40-0500 [article_spider] DEBUG: url                 'http://www.yelp.com/search%3Fcflt%3Dmobilephonerepair%26find_loc%3DHialeah%252C%2BFL%2B33012'
+2016-06-22 08:52:40-0500 [article_spider] INFO: Starting to crawl item 4.
+2016-06-22 08:52:40-0500 [article_spider] DEBUG: url                 'http://www.yellowpages.com/hialeah-fl/cell-phone-repair'
+2016-06-22 08:52:40-0500 [article_spider] INFO: Starting to crawl item 5.
+2016-06-22 08:52:40-0500 [article_spider] DEBUG: url                 'http://www.unlimitedwirelessrepair.com/'
+2016-06-22 08:52:40-0500 [article_spider] INFO: Starting to crawl item 6.
+2016-06-22 08:52:40-0500 [article_spider] DEBUG: url                 'http://drphonefix.com/hialeah-florida-iphone-repair-33012/'
+2016-06-22 08:52:40-0500 [article_spider] INFO: Starting to crawl item 7.
+2016-06-22 08:52:40-0500 [article_spider] DEBUG: url                 'http://www.cellphonesuniverse.com/'
+2016-06-22 08:52:40-0500 [article_spider] INFO: Starting to crawl item 8.
+2016-06-22 08:52:40-0500 [article_spider] DEBUG: url                 'https://www.cellairis.com/hialeah-iphone-repair'
+2016-06-22 08:52:40-0500 [article_spider] INFO: Starting to crawl item 9.
+2016-06-22 08:52:40-0500 [article_spider] DEBUG: url                 'https://www.cellairis.com/hialeah-cell-phone-repair'
+2016-06-22 08:52:40-0500 [article_spider] INFO: Starting to crawl item 10.
+2016-06-22 08:52:40-0500 [article_spider] DEBUG: url                 'http://www.yelp.es/biz/idevicemd-iphone-ipad-ipod-repair-hialeah'
+2016-06-22 08:52:40-0500 [article_spider] INFO: Starting to crawl item 11.
+2016-06-22 08:52:40-0500 [article_spider] DEBUG: url                 'http://www.cellphonerepair.com/miami-lakes-fl/'
+2016-06-22 08:52:40-0500 [article_spider] DEBUG: Crawled (200) <GET http://www.cellphonesuniverse.com/> (referer: https://www.google.com.ni/search?q=cell+phone+reparation+in+hialeah+florida&start=0)
+2016-06-22 08:52:40-0500 [article_spider] DEBUG: wholehtml           None
+2016-06-22 08:52:40-0500 [article_spider] DEBUG: No more deepsearch... continue!
+2016-06-22 08:52:40-0500 [article_spider] DEBUG: Website added/updated to MongoDB database!
+2016-06-22 08:52:40-0500 [article_spider] DEBUG: Scraped from <200 http://www.cellphonesuniverse.com/>
+	{u'url': u'http://www.cellphonesuniverse.com/'}
+2016-06-22 08:52:40-0500 [article_spider] DEBUG: Redirecting (301) to <GET https://www.yelp.es/biz/idevicemd-iphone-ipad-ipod-repair-hialeah> from <GET http://www.yelp.es/biz/idevicemd-iphone-ipad-ipod-repair-hialeah>
+2016-06-22 08:52:40-0500 [article_spider] DEBUG: Crawled (200) <GET http://www.unlimitedwirelessrepair.com/> (referer: https://www.google.com.ni/search?q=cell+phone+reparation+in+hialeah+florida&start=0)
+2016-06-22 08:52:40-0500 [article_spider] DEBUG: wholehtml           '(855) 716-6662'
+2016-06-22 08:52:40-0500 [article_spider] DEBUG: Current URL is ## http://www.unlimitedwirelessrepair.com/ ## and response URL is $$ http://www.unlimitedwirelessrepair.com/cell-phone-repair-contact-hialeah-fl.html
+2016-06-22 08:52:40-0500 [article_spider] DEBUG: Crawled (200) <GET https://www.cellairis.com/hialeah-iphone-repair> (referer: https://www.google.com.ni/search?q=cell+phone+reparation+in+hialeah+florida&start=0)
+2016-06-22 08:52:40-0500 [article_spider] DEBUG: wholehtml           '(786) 534-9992'
+2016-06-22 08:52:40-0500 [article_spider] DEBUG: No more deepsearch... continue!
+2016-06-22 08:52:40-0500 [article_spider] DEBUG: Website added/updated to MongoDB database!
+2016-06-22 08:52:40-0500 [article_spider] DEBUG: Scraped from <200 https://www.cellairis.com/hialeah-iphone-repair>
+	{u'url': u'https://www.cellairis.com/hialeah-iphone-repair',
+	 u'wholehtml': u'(786) 534-9992'}
+2016-06-22 08:52:40-0500 [article_spider] DEBUG: Crawled (200) <GET http://www.cellphonerepair.com/miami-lakes-fl/> (referer: https://www.google.com.ni/search?q=cell+phone+reparation+in+hialeah+florida&start=0)
+2016-06-22 08:52:40-0500 [article_spider] DEBUG: wholehtml           '786-232-0616'
+2016-06-22 08:52:40-0500 [article_spider] DEBUG: Current URL is ## http://www.cellphonerepair.com/miami-lakes-fl/ ## and response URL is $$ http://www.cellphonerepair.com/contact-us/
+2016-06-22 08:52:41-0500 [article_spider] DEBUG: Crawled (200) <GET http://www.yelp.com/search?cflt=mobilephonerepair&find_loc=Hialeah%2C+FL> (referer: https://www.google.com.ni/search?q=cell+phone+reparation+in+hialeah+florida&start=0)
+2016-06-22 08:52:41-0500 [article_spider] DEBUG: wholehtml           '(844) 222-1221'
+2016-06-22 08:52:41-0500 [article_spider] DEBUG: No more deepsearch... continue!
+2016-06-22 08:52:41-0500 [article_spider] DEBUG: Website added/updated to MongoDB database!
+2016-06-22 08:52:41-0500 [article_spider] DEBUG: Scraped from <200 http://www.yelp.com/search?cflt=mobilephonerepair&find_loc=Hialeah%2C+FL>
+	{u'url': u'http://www.yelp.com/search%3Fcflt%3Dmobilephonerepair%26find_loc%3DHialeah%252C%2BFL',
+	 u'wholehtml': u'(844) 222-1221'}
+2016-06-22 08:52:42-0500 [article_spider] DEBUG: Crawled (200) <GET http://www.yellowpages.com/hialeah-fl/cell-phone-repair> (referer: https://www.google.com.ni/search?q=cell+phone+reparation+in+hialeah+florida&start=0)
+2016-06-22 08:52:42-0500 [article_spider] DEBUG: wholehtml           '888-367-2194'
+2016-06-22 08:52:42-0500 [article_spider] DEBUG: Current URL is ## http://www.yellowpages.com/hialeah-fl/cell-phone-repair ## and response URL is $$ http://www.yellowpages.com/about/contact-us
+2016-06-22 08:52:42-0500 [article_spider] DEBUG: Crawled (200) <GET http://drphonefix.com/hialeah-florida-iphone-repair-33012/> (referer: https://www.google.com.ni/search?q=cell+phone+reparation+in+hialeah+florida&start=0)
+2016-06-22 08:52:42-0500 [article_spider] DEBUG: wholehtml           '754-200-8917'
+2016-06-22 08:52:42-0500 [article_spider] DEBUG: No more deepsearch... continue!
+2016-06-22 08:52:42-0500 [article_spider] DEBUG: Website added/updated to MongoDB database!
+2016-06-22 08:52:42-0500 [article_spider] DEBUG: Scraped from <200 http://drphonefix.com/hialeah-florida-iphone-repair-33012/>
+	{u'url': u'http://drphonefix.com/hialeah-florida-iphone-repair-33012/',
+	 u'wholehtml': u'754-200-8917'}
+2016-06-22 08:52:42-0500 [article_spider] DEBUG: Crawled (200) <GET http://www.unlimitedwirelessrepair.com/cell-phone-repair-contact-hialeah-fl.html> (referer: http://www.unlimitedwirelessrepair.com/)
+2016-06-22 08:52:42-0500 [article_spider] DEBUG: wholehtml           '(855) 716-6662'
+2016-06-22 08:52:42-0500 [article_spider] DEBUG: Current URL is ## http://www.unlimitedwirelessrepair.com/cell-phone-repair-contact-hialeah-fl.html ## and response URL is $$ http://www.unlimitedwirelessrepair.com/cell-phone-repair-contact-hialeah-fl.html
+2016-06-22 08:52:42-0500 [article_spider] DEBUG: Website added/updated to MongoDB database!
+2016-06-22 08:52:42-0500 [article_spider] DEBUG: Scraped from <200 http://www.unlimitedwirelessrepair.com/cell-phone-repair-contact-hialeah-fl.html>
+	{u'url': u'http://www.unlimitedwirelessrepair.com/',
+	 u'wholehtml': u'(855) 716-6662'}
+2016-06-22 08:52:42-0500 [article_spider] DEBUG: Crawled (200) <GET https://www.cellairis.com/hialeah-cell-phone-repair> (referer: https://www.google.com.ni/search?q=cell+phone+reparation+in+hialeah+florida&start=0)
+2016-06-22 08:52:42-0500 [article_spider] DEBUG: wholehtml           '(786) 534-9992'
+2016-06-22 08:52:42-0500 [article_spider] DEBUG: No more deepsearch... continue!
+2016-06-22 08:52:42-0500 [article_spider] DEBUG: Website added/updated to MongoDB database!
+2016-06-22 08:52:42-0500 [article_spider] DEBUG: Scraped from <200 https://www.cellairis.com/hialeah-cell-phone-repair>
+	{u'url': u'https://www.cellairis.com/hialeah-cell-phone-repair',
+	 u'wholehtml': u'(786) 534-9992'}
+2016-06-22 08:52:43-0500 [article_spider] DEBUG: Crawled (200) <GET https://www.google.com.ni/search?q=cell+phone+reparation+in+hialeah+florida&start=10> (referer: None)
+2016-06-22 08:52:43-0500 [article_spider] INFO: Starting to crawl item 12.
+2016-06-22 08:52:43-0500 [article_spider] DEBUG: url                 'http://www.gowirelesscity.com/'
+2016-06-22 08:52:43-0500 [article_spider] INFO: Starting to crawl item 13.
+2016-06-22 08:52:43-0500 [article_spider] DEBUG: url                 'https://www.angieslist.com/companylist/us/fl/hialeah/electronic-gadget-repair.htm'
+2016-06-22 08:52:43-0500 [article_spider] INFO: Starting to crawl item 14.
+2016-06-22 08:52:43-0500 [article_spider] DEBUG: url                 'http://www.yellowbook.com/s/cell-phone-repair/hialeah-fl/'
+2016-06-22 08:52:43-0500 [article_spider] INFO: Starting to crawl item 15.
+2016-06-22 08:52:43-0500 [article_spider] DEBUG: url                 'http://www.manta.com/c/mx4229z/idevicemd-iphone-ipad-cell-phone-repair-and-sell'
+2016-06-22 08:52:43-0500 [article_spider] INFO: Starting to crawl item 16.
+2016-06-22 08:52:43-0500 [article_spider] DEBUG: url                 'https://www.groupon.com/local/miami/phone-repair'
+2016-06-22 08:52:43-0500 [article_spider] INFO: Starting to crawl item 17.
+2016-06-22 08:52:43-0500 [article_spider] DEBUG: url                 'https://www.ubreakifix.com/locations/miamilakes'
+2016-06-22 08:52:43-0500 [article_spider] INFO: Starting to crawl item 18.
+2016-06-22 08:52:43-0500 [article_spider] DEBUG: url                 'http://www.bomboscomputerrepair.com/'
+2016-06-22 08:52:43-0500 [article_spider] INFO: Starting to crawl item 19.
+2016-06-22 08:52:43-0500 [article_spider] DEBUG: url                 'http://www.idevicemd.com/hialeah-samsung-galaxy-repair'
+2016-06-22 08:52:43-0500 [article_spider] DEBUG: Crawled (200) <GET http://www.yelp.com/search?cflt=mobilephonerepair&find_loc=Hialeah%2C+FL+33012> (referer: https://www.google.com.ni/search?q=cell+phone+reparation+in+hialeah+florida&start=0)
+2016-06-22 08:52:43-0500 [article_spider] INFO: Starting to crawl item 20.
+2016-06-22 08:52:43-0500 [article_spider] DEBUG: url                 'http://www.superpages.com/yellowpages/c-cell%2Bphone%2Brepair%2B%2526%2Binstallation/s-fl/t-hialeah/'
+2016-06-22 08:52:43-0500 [article_spider] DEBUG: wholehtml           '(844) 222-1221'
+2016-06-22 08:52:43-0500 [article_spider] DEBUG: No more deepsearch... continue!
+2016-06-22 08:52:43-0500 [article_spider] DEBUG: Crawled (416) <GET http://www.manta.com/c/mx4229z/idevicemd-iphone-ipad-cell-phone-repair-and-sell> (referer: https://www.google.com.ni/search?q=cell+phone+reparation+in+hialeah+florida&start=10)
+2016-06-22 08:52:43-0500 [article_spider] DEBUG: Crawled (200) <GET http://www.gowirelesscity.com/> (referer: https://www.google.com.ni/search?q=cell+phone+reparation+in+hialeah+florida&start=10)
+2016-06-22 08:52:43-0500 [article_spider] INFO: Starting to crawl item 21.
+2016-06-22 08:52:43-0500 [article_spider] DEBUG: url                 'http://stores.bestbuy.com/fl/hialeah/4001-w-20th-ave-555.html'
+2016-06-22 08:52:43-0500 [article_spider] DEBUG: Website added/updated to MongoDB database!
+2016-06-22 08:52:43-0500 [article_spider] DEBUG: Scraped from <200 http://www.yelp.com/search?cflt=mobilephonerepair&find_loc=Hialeah%2C+FL+33012>
+	{u'url': u'http://www.yelp.com/search%3Fcflt%3Dmobilephonerepair%26find_loc%3DHialeah%252C%2BFL%2B33012',
+	 u'wholehtml': u'(844) 222-1221'}
+2016-06-22 08:52:43-0500 [article_spider] DEBUG: Ignoring response <416 http://www.manta.com/c/mx4229z/idevicemd-iphone-ipad-cell-phone-repair-and-sell>: HTTP status code is not handled or not allowed
+2016-06-22 08:52:43-0500 [article_spider] DEBUG: wholehtml           None
+2016-06-22 08:52:43-0500 [article_spider] DEBUG: No more deepsearch... continue!
+2016-06-22 08:52:43-0500 [article_spider] DEBUG: Website added/updated to MongoDB database!
+2016-06-22 08:52:43-0500 [article_spider] DEBUG: Scraped from <200 http://www.gowirelesscity.com/>
+	{u'url': u'http://www.gowirelesscity.com/'}
+2016-06-22 08:52:43-0500 [article_spider] DEBUG: Crawled (405) <GET http://www.yellowbook.com/s/cell-phone-repair/hialeah-fl/> (referer: https://www.google.com.ni/search?q=cell+phone+reparation+in+hialeah+florida&start=10)
+2016-06-22 08:52:43-0500 [article_spider] DEBUG: Ignoring response <405 http://www.yellowbook.com/s/cell-phone-repair/hialeah-fl/>: HTTP status code is not handled or not allowed
+2016-06-22 08:52:43-0500 [article_spider] DEBUG: Crawled (200) <GET http://www.bomboscomputerrepair.com/> (referer: https://www.google.com.ni/search?q=cell+phone+reparation+in+hialeah+florida&start=10)
+2016-06-22 08:52:43-0500 [article_spider] DEBUG: wholehtml           '786 447 9301'
+2016-06-22 08:52:43-0500 [article_spider] DEBUG: Current URL is ## http://www.bomboscomputerrepair.com/ ## and response URL is $$ mailto:service@bomboscomputerrepair.com?subject=From-Home-Page_for_service
+2016-06-22 08:52:43-0500 [article_spider] DEBUG: Crawled (200) <GET http://www.cellphonerepair.com/contact-us/> (referer: http://www.cellphonerepair.com/miami-lakes-fl/)
+2016-06-22 08:52:43-0500 [article_spider] DEBUG: wholehtml           '(877) 856-5101'
+2016-06-22 08:52:43-0500 [article_spider] DEBUG: Current URL is ## http://www.cellphonerepair.com/contact-us/ ## and response URL is $$ http://www.cellphonerepair.com/contact-us/
+2016-06-22 08:52:43-0500 [article_spider] DEBUG: Website added/updated to MongoDB database!
+2016-06-22 08:52:43-0500 [article_spider] DEBUG: Scraped from <200 http://www.cellphonerepair.com/contact-us/>
+	{u'url': u'http://www.cellphonerepair.com/miami-lakes-fl/',
+	 u'wholehtml': u'(877) 856-5101'}
+2016-06-22 08:52:43-0500 [article_spider] ERROR: Error downloading <GET mailto:service@bomboscomputerrepair.com?subject=From-Home-Page_for_service>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/scrapy/core/downloader/middleware.py", line 38, in process_request
+	    return download_func(request=request, spider=spider)
+	  File "/usr/local/lib/python2.7/dist-packages/scrapy/core/downloader/__init__.py", line 123, in _enqueue_request
+	    self._process_queue(spider, slot)
+	  File "/usr/local/lib/python2.7/dist-packages/scrapy/core/downloader/__init__.py", line 143, in _process_queue
+	    dfd = self._download(slot, request, spider)
+	  File "/usr/local/lib/python2.7/dist-packages/scrapy/core/downloader/__init__.py", line 154, in _download
+	    dfd = mustbe_deferred(self.handlers.download_request, request, spider)
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/scrapy/utils/defer.py", line 39, in mustbe_deferred
+	    result = f(*args, **kw)
+	  File "/usr/local/lib/python2.7/dist-packages/scrapy/core/downloader/handlers/__init__.py", line 39, in download_request
+	    raise NotSupported("Unsupported URL scheme '%s': %s" % (scheme, msg))
+	scrapy.exceptions.NotSupported: Unsupported URL scheme 'mailto': no handler available for that scheme
+	
+2016-06-22 08:52:43-0500 [article_spider] DEBUG: Crawled (200) <GET https://www.yelp.es/biz/idevicemd-iphone-ipad-ipod-repair-hialeah> (referer: https://www.google.com.ni/search?q=cell+phone+reparation+in+hialeah+florida&start=0)
+2016-06-22 08:52:43-0500 [article_spider] DEBUG: wholehtml           '+1-305-712-7301'
+2016-06-22 08:52:43-0500 [article_spider] DEBUG: No more deepsearch... continue!
+2016-06-22 08:52:43-0500 [article_spider] DEBUG: Crawled (200) <GET http://stores.bestbuy.com/fl/hialeah/4001-w-20th-ave-555.html> (referer: https://www.google.com.ni/search?q=cell+phone+reparation+in+hialeah+florida&start=10)
+2016-06-22 08:52:43-0500 [article_spider] DEBUG: Crawled (200) <GET http://www.yellowpages.com/about/contact-us> (referer: http://www.yellowpages.com/hialeah-fl/cell-phone-repair)
+2016-06-22 08:52:43-0500 [article_spider] DEBUG: Website added/updated to MongoDB database!
+2016-06-22 08:52:43-0500 [article_spider] DEBUG: Scraped from <200 https://www.yelp.es/biz/idevicemd-iphone-ipad-ipod-repair-hialeah>
+	{u'url': u'http://www.yelp.es/biz/idevicemd-iphone-ipad-ipod-repair-hialeah',
+	 u'wholehtml': u'+1-305-712-7301'}
+2016-06-22 08:52:43-0500 [article_spider] DEBUG: wholehtml           '(305) 819-0722'
+2016-06-22 08:52:43-0500 [article_spider] DEBUG: No more deepsearch... continue!
+2016-06-22 08:52:43-0500 [article_spider] DEBUG: wholehtml           '888-367-2194'
+2016-06-22 08:52:43-0500 [article_spider] DEBUG: Current URL is ## http://www.yellowpages.com/about/contact-us ## and response URL is $$ http://www.yellowpages.com/about/contact-us
+2016-06-22 08:52:43-0500 [article_spider] DEBUG: Crawled (200) <GET http://www.idevicemd.com/hialeah-samsung-galaxy-repair> (referer: https://www.google.com.ni/search?q=cell+phone+reparation+in+hialeah+florida&start=10)
+2016-06-22 08:52:43-0500 [article_spider] DEBUG: Website added/updated to MongoDB database!
+2016-06-22 08:52:43-0500 [article_spider] DEBUG: Scraped from <200 http://stores.bestbuy.com/fl/hialeah/4001-w-20th-ave-555.html>
+	{u'url': u'http://stores.bestbuy.com/fl/hialeah/4001-w-20th-ave-555.html',
+	 u'wholehtml': u'(305) 819-0722'}
+2016-06-22 08:52:43-0500 [article_spider] DEBUG: Website added/updated to MongoDB database!
+2016-06-22 08:52:43-0500 [article_spider] DEBUG: Scraped from <200 http://www.yellowpages.com/about/contact-us>
+	{u'url': u'http://www.yellowpages.com/hialeah-fl/cell-phone-repair',
+	 u'wholehtml': u'888-367-2194'}
+2016-06-22 08:52:43-0500 [article_spider] DEBUG: wholehtml           '(305) 712-7301'
+2016-06-22 08:52:43-0500 [article_spider] DEBUG: No more deepsearch... continue!
+2016-06-22 08:52:43-0500 [article_spider] DEBUG: Website added/updated to MongoDB database!
+2016-06-22 08:52:43-0500 [article_spider] DEBUG: Scraped from <200 http://www.idevicemd.com/hialeah-samsung-galaxy-repair>
+	{u'url': u'http://www.idevicemd.com/hialeah-samsung-galaxy-repair',
+	 u'wholehtml': u'(305) 712-7301'}
+2016-06-22 08:52:44-0500 [article_spider] DEBUG: Crawled (200) <GET https://www.google.com.ni/search?q=cell+phone+reparation+in+hialeah+florida&start=20> (referer: None)
+2016-06-22 08:52:44-0500 [article_spider] INFO: Starting to crawl item 22.
+2016-06-22 08:52:44-0500 [article_spider] DEBUG: url                 'https://www.thumbtack.com/fl/hialeah/apple-repair/'
+2016-06-22 08:52:44-0500 [article_spider] INFO: Starting to crawl item 23.
+2016-06-22 08:52:44-0500 [article_spider] DEBUG: url                 'https://www.facebook.com/services/Repair-Service/193198380699462/Hialeah-Florida/112584798755439/%3Fpage%3D0%26fref%3Dtimeline'
+2016-06-22 08:52:44-0500 [article_spider] INFO: Starting to crawl item 24.
+2016-06-22 08:52:44-0500 [article_spider] DEBUG: url                 'http://www.fixfinder.com/fix/cell-phone/fl/hialeah-mobile-repair'
+2016-06-22 08:52:44-0500 [article_spider] INFO: Starting to crawl item 25.
+2016-06-22 08:52:44-0500 [article_spider] DEBUG: url                 'http://www.indeed.com/q-Cell-Phone-Repair-l-Doral,-FL-jobs.html'
+2016-06-22 08:52:44-0500 [article_spider] DEBUG: Crawled (200) <GET https://www.angieslist.com/companylist/us/fl/hialeah/electronic-gadget-repair.htm> (referer: https://www.google.com.ni/search?q=cell+phone+reparation+in+hialeah+florida&start=10)
+2016-06-22 08:52:44-0500 [article_spider] INFO: Starting to crawl item 26.
+2016-06-22 08:52:44-0500 [article_spider] DEBUG: url                 'http://storelocator.pepboys.com/pepboys/stores/hialeah/pep_boys_hialeah/00153'
+2016-06-22 08:52:44-0500 [article_spider] DEBUG: wholehtml           '1-888-888-5478'
+2016-06-22 08:52:44-0500 [article_spider] DEBUG: Current URL is ## https://www.angieslist.com/companylist/us/fl/hialeah/electronic-gadget-repair.htm ## and response URL is $$ https://support.angieslist.com/app/ask
+2016-06-22 08:52:44-0500 [article_spider] DEBUG: Crawled (200) <GET http://www.superpages.com/yellowpages/c-cell+phone+repair+%26+installation/s-fl/t-hialeah/> (referer: https://www.google.com.ni/search?q=cell+phone+reparation+in+hialeah+florida&start=10)
+2016-06-22 08:52:44-0500 [article_spider] INFO: Starting to crawl item 27.
+2016-06-22 08:52:44-0500 [article_spider] DEBUG: url                 'http://marcuswholesale.com/'
+2016-06-22 08:52:44-0500 [article_spider] DEBUG: wholehtml           '(305) 558-9048'
+2016-06-22 08:52:44-0500 [article_spider] DEBUG: Current URL is ## http://www.superpages.com/yellowpages/c-cell+phone+repair+%26+installation/s-fl/t-hialeah/ ## and response URL is $$ http://advertising.superpages.com/contact
+2016-06-22 08:52:44-0500 [article_spider] INFO: Starting to crawl item 28.
+2016-06-22 08:52:44-0500 [article_spider] DEBUG: url                 'http://www.repairgeeks.co/'
+2016-06-22 08:52:44-0500 [article_spider] INFO: Starting to crawl item 29.
+2016-06-22 08:52:44-0500 [article_spider] DEBUG: url                 'https://www.mapquest.com/us/florida/business-hialeah/att-device-support-center-22225151'
+2016-06-22 08:52:44-0500 [article_spider] INFO: Starting to crawl item 30.
+2016-06-22 08:52:44-0500 [article_spider] DEBUG: url                 'http://cell-phonesrepair.com/smartphone/shattered-screen-repair-hialeah-02166/'
+2016-06-22 08:52:44-0500 [article_spider] INFO: Starting to crawl item 31.
+2016-06-22 08:52:44-0500 [article_spider] DEBUG: url                 'http://www.hialeahcellphonerepair.com/'
+2016-06-22 08:52:44-0500 [article_spider] DEBUG: Crawled (200) <GET http://www.indeed.com/q-Cell-Phone-Repair-l-Doral,-FL-jobs.html> (referer: https://www.google.com.ni/search?q=cell+phone+reparation+in+hialeah+florida&start=20)
+2016-06-22 08:52:44-0500 [article_spider] DEBUG: wholehtml           None
+2016-06-22 08:52:44-0500 [article_spider] DEBUG: No more deepsearch... continue!
+2016-06-22 08:52:44-0500 [article_spider] DEBUG: Redirecting (301) to <GET https://www.facebook.com/search/112584798755439/places-in/193198380699462/places/intersect/?page=0> from <GET https://www.facebook.com/services/Repair-Service/193198380699462/Hialeah-Florida/112584798755439/?page=0&fref=timeline>
+2016-06-22 08:52:44-0500 [article_spider] DEBUG: Website added/updated to MongoDB database!
+2016-06-22 08:52:44-0500 [article_spider] DEBUG: Scraped from <200 http://www.indeed.com/q-Cell-Phone-Repair-l-Doral,-FL-jobs.html>
+	{u'url': u'http://www.indeed.com/q-Cell-Phone-Repair-l-Doral,-FL-jobs.html'}
+2016-06-22 08:52:44-0500 [article_spider] DEBUG: Redirecting (301) to <GET http://advertising.superpages.com/contact/> from <GET http://advertising.superpages.com/contact>
+2016-06-22 08:52:44-0500 [article_spider] DEBUG: Crawled (200) <GET https://www.thumbtack.com/fl/hialeah/apple-repair/> (referer: https://www.google.com.ni/search?q=cell+phone+reparation+in+hialeah+florida&start=20)
+2016-06-22 08:52:44-0500 [article_spider] DEBUG: wholehtml           '555-555-5555'
+2016-06-22 08:52:44-0500 [article_spider] DEBUG: Current URL is ## https://www.thumbtack.com/fl/hialeah/apple-repair/ ## and response URL is $$ https://help.thumbtack.com?vw=ct
+2016-06-22 08:52:45-0500 [article_spider] DEBUG: Redirecting (301) to <GET https://www.angieslist.com/app/ask> from <GET https://support.angieslist.com/app/ask>
+2016-06-22 08:52:45-0500 [article_spider] DEBUG: Crawled (200) <GET http://www.fixfinder.com/fix/cell-phone/fl/hialeah-mobile-repair> (referer: https://www.google.com.ni/search?q=cell+phone+reparation+in+hialeah+florida&start=20)
+2016-06-22 08:52:45-0500 [article_spider] DEBUG: wholehtml           None
+2016-06-22 08:52:45-0500 [article_spider] DEBUG: Current URL is ## http://www.fixfinder.com/fix/cell-phone/fl/hialeah-mobile-repair ## and response URL is $$ http://www.fixfinder.com/Home/ContactUs
+2016-06-22 08:52:45-0500 [article_spider] DEBUG: Crawled (200) <GET http://www.hialeahcellphonerepair.com/> (referer: https://www.google.com.ni/search?q=cell+phone+reparation+in+hialeah+florida&start=20)
+2016-06-22 08:52:45-0500 [article_spider] DEBUG: wholehtml           '786.447.9301'
+2016-06-22 08:52:45-0500 [article_spider] DEBUG: Current URL is ## http://www.hialeahcellphonerepair.com/ ## and response URL is $$ mailto:service@bomboscomputerrepair.com?subject=For_Web-Master
+2016-06-22 08:52:45-0500 [article_spider] DEBUG: Crawled (200) <GET http://storelocator.pepboys.com/pepboys/stores/hialeah/pep_boys_hialeah/00153> (referer: https://www.google.com.ni/search?q=cell+phone+reparation+in+hialeah+florida&start=20)
+2016-06-22 08:52:45-0500 [article_spider] DEBUG: wholehtml           '(305) 557-4498'
+2016-06-22 08:52:45-0500 [article_spider] DEBUG: Current URL is ## http://storelocator.pepboys.com/pepboys/stores/hialeah/pep_boys_hialeah/00153 ## and response URL is $$ http://www.pepboys.com/customer_care/contact_us
+2016-06-22 08:52:45-0500 [article_spider] DEBUG: Retrying <GET https://help.thumbtack.com?vw=ct> (failed 1 times): 400 Bad Request
+2016-06-22 08:52:45-0500 [article_spider] DEBUG: Crawled (200) <GET http://marcuswholesale.com/> (referer: https://www.google.com.ni/search?q=cell+phone+reparation+in+hialeah+florida&start=20)
+2016-06-22 08:52:45-0500 [article_spider] DEBUG: wholehtml           '305-593-6151'
+2016-06-22 08:52:45-0500 [article_spider] DEBUG: Current URL is ## http://marcuswholesale.com/ ## and response URL is $$ http://marcuswholesale.com/contact-us/
+2016-06-22 08:52:45-0500 [article_spider] DEBUG: Redirecting (301) to <GET https://www.pepboys.com/customer_care/contact_us> from <GET http://www.pepboys.com/customer_care/contact_us>
+2016-06-22 08:52:45-0500 [article_spider] DEBUG: Crawled (200) <GET https://www.groupon.com/local/miami/phone-repair> (referer: https://www.google.com.ni/search?q=cell+phone+reparation+in+hialeah+florida&start=10)
+2016-06-22 08:52:45-0500 [article_spider] DEBUG: wholehtml           None
+2016-06-22 08:52:45-0500 [article_spider] DEBUG: No more deepsearch... continue!
+2016-06-22 08:52:45-0500 [article_spider] DEBUG: Website added/updated to MongoDB database!
+2016-06-22 08:52:45-0500 [article_spider] DEBUG: Scraped from <200 https://www.groupon.com/local/miami/phone-repair>
+	{u'url': u'https://www.groupon.com/local/miami/phone-repair'}
+2016-06-22 08:52:45-0500 [article_spider] DEBUG: Crawled (200) <GET http://cell-phonesrepair.com/smartphone/shattered-screen-repair-hialeah-02166/> (referer: https://www.google.com.ni/search?q=cell+phone+reparation+in+hialeah+florida&start=20)
+2016-06-22 08:52:45-0500 [article_spider] DEBUG: wholehtml           None
+2016-06-22 08:52:45-0500 [article_spider] DEBUG: No more deepsearch... continue!
+2016-06-22 08:52:45-0500 [article_spider] DEBUG: Website added/updated to MongoDB database!
+2016-06-22 08:52:45-0500 [article_spider] DEBUG: Scraped from <200 http://cell-phonesrepair.com/smartphone/shattered-screen-repair-hialeah-02166/>
+	{u'url': u'http://cell-phonesrepair.com/smartphone/shattered-screen-repair-hialeah-02166/'}
+2016-06-22 08:52:45-0500 [article_spider] DEBUG: Crawled (200) <GET https://www.mapquest.com/us/florida/business-hialeah/att-device-support-center-22225151> (referer: https://www.google.com.ni/search?q=cell+phone+reparation+in+hialeah+florida&start=20)
+2016-06-22 08:52:45-0500 [article_spider] DEBUG: wholehtml           '(800) 801-1101'
+2016-06-22 08:52:45-0500 [article_spider] DEBUG: No more deepsearch... continue!
+2016-06-22 08:52:45-0500 [article_spider] DEBUG: Website added/updated to MongoDB database!
+2016-06-22 08:52:45-0500 [article_spider] DEBUG: Scraped from <200 https://www.mapquest.com/us/florida/business-hialeah/att-device-support-center-22225151>
+	{u'url': u'https://www.mapquest.com/us/florida/business-hialeah/att-device-support-center-22225151',
+	 u'wholehtml': u'(800) 801-1101'}
+2016-06-22 08:52:45-0500 [article_spider] DEBUG: Crawled (200) <GET https://www.ubreakifix.com/locations/miamilakes> (referer: https://www.google.com.ni/search?q=cell+phone+reparation+in+hialeah+florida&start=10)
+2016-06-22 08:52:45-0500 [article_spider] DEBUG: wholehtml           '(786) 558-9354'
+2016-06-22 08:52:45-0500 [article_spider] DEBUG: Current URL is ## https://www.ubreakifix.com/locations/miamilakes ## and response URL is $$ https://www.ubreakifix.com/contact
+2016-06-22 08:52:45-0500 [article_spider] ERROR: Error downloading <GET mailto:service@bomboscomputerrepair.com?subject=For_Web-Master>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1203, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 825, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/scrapy/core/downloader/__init__.py", line 143, in _process_queue
+	    dfd = self._download(slot, request, spider)
+	  File "/usr/local/lib/python2.7/dist-packages/scrapy/core/downloader/__init__.py", line 154, in _download
+	    dfd = mustbe_deferred(self.handlers.download_request, request, spider)
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/scrapy/utils/defer.py", line 39, in mustbe_deferred
+	    result = f(*args, **kw)
+	  File "/usr/local/lib/python2.7/dist-packages/scrapy/core/downloader/handlers/__init__.py", line 39, in download_request
+	    raise NotSupported("Unsupported URL scheme '%s': %s" % (scheme, msg))
+	scrapy.exceptions.NotSupported: Unsupported URL scheme 'mailto': no handler available for that scheme
+	
+2016-06-22 08:52:46-0500 [article_spider] DEBUG: Crawled (200) <GET http://www.fixfinder.com/Home/ContactUs> (referer: http://www.fixfinder.com/fix/cell-phone/fl/hialeah-mobile-repair)
+2016-06-22 08:52:46-0500 [article_spider] DEBUG: wholehtml           '817-484-0213'
+2016-06-22 08:52:46-0500 [article_spider] DEBUG: Current URL is ## http://www.fixfinder.com/Home/ContactUs ## and response URL is $$ http://www.fixfinder.com/Home/ContactUs
+2016-06-22 08:52:46-0500 [article_spider] DEBUG: Website added/updated to MongoDB database!
+2016-06-22 08:52:46-0500 [article_spider] DEBUG: Scraped from <200 http://www.fixfinder.com/Home/ContactUs>
+	{u'url': u'http://www.fixfinder.com/fix/cell-phone/fl/hialeah-mobile-repair',
+	 u'wholehtml': u'817-484-0213'}
+2016-06-22 08:52:46-0500 [article_spider] DEBUG: Crawled (200) <GET https://www.pepboys.com/customer_care/contact_us> (referer: http://storelocator.pepboys.com/pepboys/stores/hialeah/pep_boys_hialeah/00153)
+2016-06-22 08:52:46-0500 [article_spider] DEBUG: wholehtml           '1-888-418-2298'
+2016-06-22 08:52:46-0500 [article_spider] DEBUG: Current URL is ## https://www.pepboys.com/customer_care/contact_us ## and response URL is $$ https://pepboys.boostcx.com/webcases/
+2016-06-22 08:52:46-0500 [article_spider] DEBUG: Crawled (200) <GET https://www.ubreakifix.com/contact> (referer: https://www.ubreakifix.com/locations/miamilakes)
+2016-06-22 08:52:46-0500 [article_spider] DEBUG: wholehtml           '877-320-2237'
+2016-06-22 08:52:46-0500 [article_spider] DEBUG: Current URL is ## https://www.ubreakifix.com/contact ## and response URL is $$ https://www.ubreakifix.com/contact
+2016-06-22 08:52:46-0500 [article_spider] DEBUG: Crawled (200) <GET https://www.google.com.ni/search?q=cell+phone+reparation+in+hialeah+florida&start=30> (referer: None)
+2016-06-22 08:52:46-0500 [article_spider] DEBUG: Website added/updated to MongoDB database!
+2016-06-22 08:52:46-0500 [article_spider] DEBUG: Scraped from <200 https://www.ubreakifix.com/contact>
+	{u'url': u'https://www.ubreakifix.com/locations/miamilakes',
+	 u'wholehtml': u'877-320-2237'}
+2016-06-22 08:52:46-0500 [article_spider] INFO: Starting to crawl item 32.
+2016-06-22 08:52:46-0500 [article_spider] DEBUG: url                 'http://www.bbb.org/south-east-florida/accredited-business-directory/cell-phone-and-tablet-equipment-supplies-and-repair/hialeah-fl'
+2016-06-22 08:52:47-0500 [article_spider] INFO: Starting to crawl item 33.
+2016-06-22 08:52:47-0500 [article_spider] DEBUG: url                 'http://phone-techs.com/'
+2016-06-22 08:52:47-0500 [article_spider] INFO: Starting to crawl item 34.
+2016-06-22 08:52:47-0500 [article_spider] DEBUG: url                 'https://offerupnow.com/item/detail/46689429/iphone-unlock-repair-fix-imei-today'
+2016-06-22 08:52:47-0500 [article_spider] INFO: Starting to crawl item 35.
+2016-06-22 08:52:47-0500 [article_spider] DEBUG: url                 'http://busquedalocal.univision.com/es/miami-lakes-fl/d-1000000257637-cpr-cell-phone-repair-miami-lakes-electronica-distribuidores-servicios-de-reparacion.html'
+2016-06-22 08:52:47-0500 [article_spider] INFO: Starting to crawl item 36.
+2016-06-22 08:52:47-0500 [article_spider] DEBUG: url                 'http://www.reliant-tech.com/computer-repair/Hialeah-FL/local-services.html'
+2016-06-22 08:52:47-0500 [article_spider] INFO: Starting to crawl item 37.
+2016-06-22 08:52:47-0500 [article_spider] DEBUG: url                 'http://www.phonerepairguy.com/repair_services_Hialeah.html'
+2016-06-22 08:52:47-0500 [article_spider] INFO: Starting to crawl item 38.
+2016-06-22 08:52:47-0500 [article_spider] DEBUG: url                 'https://miami.craigslist.org/search/mod'
+2016-06-22 08:52:47-0500 [article_spider] DEBUG: Redirecting (301) to <GET https://www.angieslist.com/app/ask/> from <GET https://www.angieslist.com/app/ask>
+2016-06-22 08:52:47-0500 [article_spider] INFO: Starting to crawl item 39.
+2016-06-22 08:52:47-0500 [article_spider] DEBUG: url                 None
+2016-06-22 08:52:47-0500 [article_spider] ERROR: Item could not be read!
+2016-06-22 08:52:47-0500 [article_spider] INFO: Starting to crawl item 40.
+2016-06-22 08:52:47-0500 [article_spider] DEBUG: url                 'http://therepairgroup.com/'
+2016-06-22 08:52:47-0500 [article_spider] DEBUG: Crawled (200) <GET https://pepboys.boostcx.com/webcases/> (referer: https://www.pepboys.com/customer_care/contact_us)
+2016-06-22 08:52:47-0500 [article_spider] INFO: Starting to crawl item 41.
+2016-06-22 08:52:47-0500 [article_spider] DEBUG: url                 'http://www.mbselectronic.com/'
+2016-06-22 08:52:47-0500 [article_spider] DEBUG: wholehtml           None
+2016-06-22 08:52:47-0500 [article_spider] DEBUG: No more deepsearch... continue!
+2016-06-22 08:52:47-0500 [article_spider] DEBUG: Website added/updated to MongoDB database!
+2016-06-22 08:52:47-0500 [article_spider] DEBUG: Scraped from <200 https://pepboys.boostcx.com/webcases/>
+	{u'url': u'http://storelocator.pepboys.com/pepboys/stores/hialeah/pep_boys_hialeah/00153',
+	 u'wholehtml': u'1-888-418-2298'}
+2016-06-22 08:52:47-0500 [article_spider] DEBUG: Crawled (403) <GET https://offerupnow.com/item/detail/46689429/iphone-unlock-repair-fix-imei-today> (referer: https://www.google.com.ni/search?q=cell+phone+reparation+in+hialeah+florida&start=30)
+2016-06-22 08:52:47-0500 [article_spider] DEBUG: Ignoring response <403 https://offerupnow.com/item/detail/46689429/iphone-unlock-repair-fix-imei-today>: HTTP status code is not handled or not allowed
+2016-06-22 08:52:47-0500 [article_spider] DEBUG: Crawled (200) <GET http://advertising.superpages.com/contact/> (referer: http://www.superpages.com/yellowpages/c-cell+phone+repair+%26+installation/s-fl/t-hialeah/)
+2016-06-22 08:52:47-0500 [article_spider] DEBUG: wholehtml           '855-487-1629'
+2016-06-22 08:52:47-0500 [article_spider] DEBUG: Current URL is ## http://advertising.superpages.com/contact/ ## and response URL is $$ http://www.dexmedia.com/about/corporate
+2016-06-22 08:52:47-0500 [article_spider] DEBUG: Crawled (200) <GET http://therepairgroup.com/> (referer: https://www.google.com.ni/search?q=cell+phone+reparation+in+hialeah+florida&start=30)
+2016-06-22 08:52:47-0500 [article_spider] DEBUG: wholehtml           '305.447.0508'
+2016-06-22 08:52:47-0500 [article_spider] DEBUG: No more deepsearch... continue!
+2016-06-22 08:52:47-0500 [article_spider] DEBUG: Website added/updated to MongoDB database!
+2016-06-22 08:52:47-0500 [article_spider] DEBUG: Scraped from <200 http://therepairgroup.com/>
+	{u'url': u'http://therepairgroup.com/', u'wholehtml': u'305.447.0508'}
+2016-06-22 08:52:47-0500 [article_spider] DEBUG: Redirecting (301) to <GET http://www.dexmedia.com/about/corporate/> from <GET http://www.dexmedia.com/about/corporate>
+2016-06-22 08:52:47-0500 [article_spider] DEBUG: Crawled (200) <GET http://www.phonerepairguy.com/repair_services_Hialeah.html> (referer: https://www.google.com.ni/search?q=cell+phone+reparation+in+hialeah+florida&start=30)
+2016-06-22 08:52:47-0500 [article_spider] DEBUG: wholehtml           '954-242-8277'
+2016-06-22 08:52:47-0500 [article_spider] DEBUG: Current URL is ## http://www.phonerepairguy.com/repair_services_Hialeah.html ## and response URL is $$ http://www.phonerepairguy.com/contact.html
+2016-06-22 08:52:47-0500 [article_spider] DEBUG: Crawled (200) <GET https://miami.craigslist.org/search/mod> (referer: https://www.google.com.ni/search?q=cell+phone+reparation+in+hialeah+florida&start=30)
+2016-06-22 08:52:47-0500 [article_spider] DEBUG: wholehtml           None
+2016-06-22 08:52:47-0500 [article_spider] DEBUG: No more deepsearch... continue!
+2016-06-22 08:52:47-0500 [article_spider] DEBUG: Retrying <GET https://help.thumbtack.com?vw=ct> (failed 2 times): 400 Bad Request
+2016-06-22 08:52:47-0500 [article_spider] DEBUG: Website added/updated to MongoDB database!
+2016-06-22 08:52:47-0500 [article_spider] DEBUG: Scraped from <200 https://miami.craigslist.org/search/mod>
+	{u'url': u'https://miami.craigslist.org/search/mod'}
+2016-06-22 08:52:47-0500 [article_spider] DEBUG: Redirecting (301) to <GET http://busquedalocal.univision.com/es/miami-lakes-fl/d-1000000257637-cpr-cell-phone-repair-miami-lakes-computadoras.html> from <GET http://busquedalocal.univision.com/es/miami-lakes-fl/d-1000000257637-cpr-cell-phone-repair-miami-lakes-electronica-distribuidores-servicios-de-reparacion.html>
+2016-06-22 08:52:47-0500 [article_spider] DEBUG: Crawled (200) <GET http://www.mbselectronic.com/> (referer: https://www.google.com.ni/search?q=cell+phone+reparation+in+hialeah+florida&start=30)
+2016-06-22 08:52:47-0500 [article_spider] DEBUG: wholehtml           '(786) 282-2026'
+2016-06-22 08:52:47-0500 [article_spider] DEBUG: Current URL is ## http://www.mbselectronic.com/ ## and response URL is $$ http://www.mbselectronic.com/contacts/
+2016-06-22 08:52:47-0500 [article_spider] DEBUG: Crawled (200) <GET http://marcuswholesale.com/contact-us/> (referer: http://marcuswholesale.com/)
+2016-06-22 08:52:47-0500 [article_spider] DEBUG: wholehtml           '305-593-6151'
+2016-06-22 08:52:47-0500 [article_spider] DEBUG: Current URL is ## http://marcuswholesale.com/contact-us/ ## and response URL is $$ http://marcuswholesale.com/contact-us/
+2016-06-22 08:52:47-0500 [article_spider] DEBUG: Website added/updated to MongoDB database!
+2016-06-22 08:52:47-0500 [article_spider] DEBUG: Scraped from <200 http://marcuswholesale.com/contact-us/>
+	{u'url': u'http://marcuswholesale.com/', u'wholehtml': u'305-593-6151'}
+2016-06-22 08:52:48-0500 [article_spider] DEBUG: Crawled (200) <GET http://www.reliant-tech.com/computer-repair/Hialeah-FL/local-services.html> (referer: https://www.google.com.ni/search?q=cell+phone+reparation+in+hialeah+florida&start=30)
+2016-06-22 08:52:48-0500 [article_spider] DEBUG: wholehtml           '(305) 818-5751'
+2016-06-22 08:52:48-0500 [article_spider] DEBUG: Current URL is ## http://www.reliant-tech.com/computer-repair/Hialeah-FL/local-services.html ## and response URL is $$ http://www.reliant-tech.com/resources/contact-us.html
+2016-06-22 08:52:48-0500 [article_spider] DEBUG: Crawled (200) <GET http://phone-techs.com/> (referer: https://www.google.com.ni/search?q=cell+phone+reparation+in+hialeah+florida&start=30)
+2016-06-22 08:52:48-0500 [article_spider] DEBUG: wholehtml           '(305) 792-5703'
+2016-06-22 08:52:48-0500 [article_spider] DEBUG: No more deepsearch... continue!
+2016-06-22 08:52:48-0500 [article_spider] DEBUG: Website added/updated to MongoDB database!
+2016-06-22 08:52:48-0500 [article_spider] DEBUG: Scraped from <200 http://phone-techs.com/>
+	{u'url': u'http://phone-techs.com/', u'wholehtml': u'(305) 792-5703'}
+2016-06-22 08:52:49-0500 [article_spider] DEBUG: Redirecting (301) to <GET http://my.angieslist.com/AngiesList/Visitor/ContactUs.aspx> from <GET https://www.angieslist.com/app/ask/>
+2016-06-22 08:52:49-0500 [article_spider] DEBUG: Crawled (200) <GET http://www.bbb.org/south-east-florida/accredited-business-directory/cell-phone-and-tablet-equipment-supplies-and-repair/hialeah-fl> (referer: https://www.google.com.ni/search?q=cell+phone+reparation+in+hialeah+florida&start=30)
+2016-06-22 08:52:49-0500 [article_spider] DEBUG: wholehtml           '(305) 253-2244'
+2016-06-22 08:52:49-0500 [article_spider] DEBUG: Current URL is ## http://www.bbb.org/south-east-florida/accredited-business-directory/cell-phone-and-tablet-equipment-supplies-and-repair/hialeah-fl ## and response URL is $$ http://www.bbb.org/south-east-florida/get-to-know-us/contact/
+2016-06-22 08:52:49-0500 [article_spider] DEBUG: Crawled (200) <GET http://www.repairgeeks.co/> (referer: https://www.google.com.ni/search?q=cell+phone+reparation+in+hialeah+florida&start=20)
+2016-06-22 08:52:49-0500 [article_spider] DEBUG: wholehtml           '786.651.4746'
+2016-06-22 08:52:49-0500 [article_spider] DEBUG: No more deepsearch... continue!
+2016-06-22 08:52:49-0500 [article_spider] DEBUG: Crawled (200) <GET http://busquedalocal.univision.com/es/miami-lakes-fl/d-1000000257637-cpr-cell-phone-repair-miami-lakes-computadoras.html> (referer: https://www.google.com.ni/search?q=cell+phone+reparation+in+hialeah+florida&start=30)
+2016-06-22 08:52:49-0500 [article_spider] DEBUG: Crawled (200) <GET http://www.dexmedia.com/about/corporate/> (referer: http://advertising.superpages.com/contact/)
+2016-06-22 08:52:49-0500 [article_spider] DEBUG: Website added/updated to MongoDB database!
+2016-06-22 08:52:49-0500 [article_spider] DEBUG: Scraped from <200 http://www.repairgeeks.co/>
+	{u'url': u'http://www.repairgeeks.co/', u'wholehtml': u'786.651.4746'}
+2016-06-22 08:52:49-0500 [article_spider] DEBUG: wholehtml           '(786)-232-0616'
+2016-06-22 08:52:49-0500 [article_spider] DEBUG: No more deepsearch... continue!
+2016-06-22 08:52:49-0500 [article_spider] DEBUG: wholehtml           '844-339-6334'
+2016-06-22 08:52:49-0500 [article_spider] DEBUG: Current URL is ## http://www.dexmedia.com/about/corporate/ ## and response URL is $$ http://www.dexmedia.com/contact-us/
+2016-06-22 08:52:49-0500 [article_spider] DEBUG: Website added/updated to MongoDB database!
+2016-06-22 08:52:49-0500 [article_spider] DEBUG: Scraped from <200 http://busquedalocal.univision.com/es/miami-lakes-fl/d-1000000257637-cpr-cell-phone-repair-miami-lakes-computadoras.html>
+	{u'url': u'http://busquedalocal.univision.com/es/miami-lakes-fl/d-1000000257637-cpr-cell-phone-repair-miami-lakes-electronica-distribuidores-servicios-de-reparacion.html',
+	 u'wholehtml': u'(786)-232-0616'}
+2016-06-22 08:52:49-0500 [article_spider] DEBUG: Crawled (200) <GET https://www.facebook.com/search/112584798755439/places-in/193198380699462/places/intersect/?page=0> (referer: https://www.google.com.ni/search?q=cell+phone+reparation+in+hialeah+florida&start=20)
+2016-06-22 08:52:49-0500 [article_spider] DEBUG: wholehtml           '(786) 360-1095'
+2016-06-22 08:52:49-0500 [article_spider] DEBUG: No more deepsearch... continue!
+2016-06-22 08:52:49-0500 [article_spider] DEBUG: Website added/updated to MongoDB database!
+2016-06-22 08:52:49-0500 [article_spider] DEBUG: Scraped from <200 https://www.facebook.com/search/112584798755439/places-in/193198380699462/places/intersect/?page=0>
+	{u'url': u'https://www.facebook.com/services/Repair-Service/193198380699462/Hialeah-Florida/112584798755439/%3Fpage%3D0%26fref%3Dtimeline',
+	 u'wholehtml': u'(786) 360-1095'}
+2016-06-22 08:52:49-0500 [article_spider] DEBUG: Crawled (200) <GET http://www.bbb.org/south-east-florida/get-to-know-us/contact/> (referer: http://www.bbb.org/south-east-florida/accredited-business-directory/cell-phone-and-tablet-equipment-supplies-and-repair/hialeah-fl)
+2016-06-22 08:52:49-0500 [article_spider] DEBUG: wholehtml           '561-842-1918'
+2016-06-22 08:52:49-0500 [article_spider] DEBUG: Current URL is ## http://www.bbb.org/south-east-florida/get-to-know-us/contact/ ## and response URL is $$ http://www.bbb.org/south-east-florida/get-to-know-us/contact/
+2016-06-22 08:52:49-0500 [article_spider] DEBUG: Website added/updated to MongoDB database!
+2016-06-22 08:52:49-0500 [article_spider] DEBUG: Scraped from <200 http://www.bbb.org/south-east-florida/get-to-know-us/contact/>
+	{u'url': u'http://www.bbb.org/south-east-florida/accredited-business-directory/cell-phone-and-tablet-equipment-supplies-and-repair/hialeah-fl',
+	 u'wholehtml': u'561-842-1918'}
+2016-06-22 08:52:50-0500 [article_spider] DEBUG: Crawled (200) <GET http://www.phonerepairguy.com/contact.html> (referer: http://www.phonerepairguy.com/repair_services_Hialeah.html)
+2016-06-22 08:52:50-0500 [article_spider] DEBUG: wholehtml           '954-242-8277'
+2016-06-22 08:52:50-0500 [article_spider] DEBUG: Current URL is ## http://www.phonerepairguy.com/contact.html ## and response URL is $$ http://www.phonerepairguy.com/contact.html
+2016-06-22 08:52:50-0500 [article_spider] DEBUG: Website added/updated to MongoDB database!
+2016-06-22 08:52:50-0500 [article_spider] DEBUG: Scraped from <200 http://www.phonerepairguy.com/contact.html>
+	{u'url': u'http://www.phonerepairguy.com/repair_services_Hialeah.html',
+	 u'wholehtml': u'954-242-8277'}
+2016-06-22 08:52:50-0500 [article_spider] DEBUG: Crawled (200) <GET http://www.reliant-tech.com/resources/contact-us.html> (referer: http://www.reliant-tech.com/computer-repair/Hialeah-FL/local-services.html)
+2016-06-22 08:52:50-0500 [article_spider] DEBUG: wholehtml           None
+2016-06-22 08:52:50-0500 [article_spider] DEBUG: Current URL is ## http://www.reliant-tech.com/resources/contact-us.html ## and response URL is $$ http://www.reliant-tech.com/resources/contact-us.html
+2016-06-22 08:52:50-0500 [article_spider] DEBUG: Website added/updated to MongoDB database!
+2016-06-22 08:52:50-0500 [article_spider] DEBUG: Scraped from <200 http://www.reliant-tech.com/resources/contact-us.html>
+	{u'url': u'http://www.reliant-tech.com/computer-repair/Hialeah-FL/local-services.html',
+	 u'wholehtml': u'(305) 818-5751'}
+2016-06-22 08:52:50-0500 [article_spider] DEBUG: Gave up retrying <GET https://help.thumbtack.com?vw=ct> (failed 3 times): 400 Bad Request
+2016-06-22 08:52:50-0500 [article_spider] DEBUG: Crawled (400) <GET https://help.thumbtack.com?vw=ct> (referer: https://www.thumbtack.com/fl/hialeah/apple-repair/)
+2016-06-22 08:52:50-0500 [article_spider] DEBUG: Ignoring response <400 https://help.thumbtack.com?vw=ct>: HTTP status code is not handled or not allowed
+2016-06-22 08:52:50-0500 [article_spider] DEBUG: Crawled (200) <GET http://www.mbselectronic.com/contacts/> (referer: http://www.mbselectronic.com/)
+2016-06-22 08:52:50-0500 [article_spider] DEBUG: wholehtml           '(786) 282-2026'
+2016-06-22 08:52:50-0500 [article_spider] DEBUG: Current URL is ## http://www.mbselectronic.com/contacts/ ## and response URL is $$ http://www.mbselectronic.com/contacts/
+2016-06-22 08:52:50-0500 [article_spider] DEBUG: Website added/updated to MongoDB database!
+2016-06-22 08:52:50-0500 [article_spider] DEBUG: Scraped from <200 http://www.mbselectronic.com/contacts/>
+	{u'url': u'http://www.mbselectronic.com/', u'wholehtml': u'(786) 282-2026'}
+2016-06-22 08:52:51-0500 [article_spider] DEBUG: Crawled (200) <GET http://www.dexmedia.com/contact-us/> (referer: http://www.dexmedia.com/about/corporate/)
+2016-06-22 08:52:51-0500 [article_spider] DEBUG: wholehtml           '855-239-6503'
+2016-06-22 08:52:51-0500 [article_spider] DEBUG: Current URL is ## http://www.dexmedia.com/contact-us/ ## and response URL is $$ http://www.dexmedia.com/contact-us/
+2016-06-22 08:52:51-0500 [article_spider] DEBUG: Website added/updated to MongoDB database!
+2016-06-22 08:52:51-0500 [article_spider] DEBUG: Scraped from <200 http://www.dexmedia.com/contact-us/>
+	{u'url': u'http://www.superpages.com/yellowpages/c-cell%2Bphone%2Brepair%2B%2526%2Binstallation/s-fl/t-hialeah/',
+	 u'wholehtml': u'855-239-6503'}
+2016-06-22 08:52:52-0500 [article_spider] DEBUG: Crawled (200) <GET http://my.angieslist.com/AngiesList/Visitor/ContactUs.aspx> (referer: https://www.angieslist.com/companylist/us/fl/hialeah/electronic-gadget-repair.htm)
+2016-06-22 08:52:52-0500 [article_spider] DEBUG: wholehtml           '1-888-888-5478'
+2016-06-22 08:52:52-0500 [article_spider] DEBUG: Current URL is ## http://my.angieslist.com/AngiesList/Visitor/ContactUs.aspx ## and response URL is $$ https://my.angieslist.com/AngiesList/visitor/ContactUs.aspx
+2016-06-22 08:52:52-0500 [article_spider] DEBUG: Redirecting (302) to <GET http://my.angieslist.com/AngiesList/visitor/ContactUs.aspx> from <GET https://my.angieslist.com/AngiesList/visitor/ContactUs.aspx>
+2016-06-22 08:52:54-0500 [article_spider] DEBUG: Crawled (200) <GET http://my.angieslist.com/AngiesList/visitor/ContactUs.aspx> (referer: http://my.angieslist.com/AngiesList/Visitor/ContactUs.aspx)
+2016-06-22 08:52:54-0500 [article_spider] DEBUG: wholehtml           '1-888-888-5478'
+2016-06-22 08:52:54-0500 [article_spider] DEBUG: Current URL is ## http://my.angieslist.com/AngiesList/visitor/ContactUs.aspx ## and response URL is $$ https://my.angieslist.com/AngiesList/visitor/ContactUs.aspx
+2016-06-22 08:52:54-0500 [article_spider] DEBUG: Filtered duplicate request: <GET https://my.angieslist.com/AngiesList/visitor/ContactUs.aspx> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2016-06-22 08:52:54-0500 [article_spider] INFO: Closing spider (finished)
+2016-06-22 08:52:55-0500 [article_spider] INFO: Scheduler runtime updated (Next action time: 2016-06-22 14:06, Next action factor: 21.97, Zero actions: 2)
+2016-06-22 08:52:55-0500 [article_spider] INFO: Dumping Scrapy stats:
+	{'downloader/exception_count': 2,
+	 'downloader/exception_type_count/scrapy.exceptions.NotSupported': 2,
+	 'downloader/request_bytes': 27450,
+	 'downloader/request_count': 75,
+	 'downloader/request_method_count/GET': 75,
+	 'downloader/response_bytes': 1237990,
+	 'downloader/response_count': 73,
+	 'downloader/response_status_count/200': 57,
+	 'downloader/response_status_count/301': 9,
+	 'downloader/response_status_count/302': 1,
+	 'downloader/response_status_count/400': 3,
+	 'downloader/response_status_count/403': 1,
+	 'downloader/response_status_count/405': 1,
+	 'downloader/response_status_count/416': 1,
+	 'dupefilter/filtered': 1,
+	 'finish_reason': 'finished',
+	 'finish_time': datetime.datetime(2016, 6, 22, 13, 52, 54, 984110),
+	 'item_scraped_count': 32,
+	 'log_count/DEBUG': 292,
+	 'log_count/ERROR': 4,
+	 'log_count/INFO': 49,
+	 'request_depth_max': 4,
+	 'response_received_count': 61,
+	 'scheduler/dequeued': 75,
+	 'scheduler/dequeued/memory': 75,
+	 'scheduler/enqueued': 75,
+	 'scheduler/enqueued/memory': 75,
+	 'start_time': datetime.datetime(2016, 6, 22, 13, 52, 39, 310968)}
+2016-06-22 08:52:55-0500 [article_spider] INFO: Spider closed (finished)
