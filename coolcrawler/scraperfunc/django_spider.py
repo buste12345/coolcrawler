@@ -252,7 +252,11 @@ class DjangoSpider(DjangoBaseSpider):
         for elem in elems:
             self._scrape_item_attr(elem)
             
-        if self.from_detail_page:
+        if self.from_detail_page and self.scraper.scrape_urls:
+            #if self.scraper.scrape_urls:
+            #    self.log("Yes deepsearch/scrape test")
+            #else:
+            #    self.log("No deepsearch/scrape test")
             hxs = HtmlXPathSelector(response)
             try:
                 nextelem = hxs.select("//a[contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'),'contact')]/@href").extract()[0]
